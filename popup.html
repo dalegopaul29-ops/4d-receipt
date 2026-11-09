@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+body{font-family:system-ui,sans-serif;width:320px;margin:0;padding:14px;background:#f5f5f5;color:#111}
+h1{font-size:14px;margin:0 0 10px}.muted{color:#666;font-size:12px}
+.row{display:flex;justify-content:space-between;font-size:12.5px;padding:4px 0;border-bottom:1px solid #e3e3e3}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600}
+.alert{background:#b3261e;color:#fff}.notice{background:#e19100;color:#fff}.none{background:#999;color:#fff}
+button{width:100%;margin-top:8px;padding:9px;border:0;border-radius:8px;font-weight:600;cursor:pointer}
+.primary{background:#111;color:#fff}.danger{background:#fff;color:#b3261e;border:1px solid #b3261e}
+.link{background:none;border:0;color:#111;text-decoration:underline;font-weight:400}
+#diffSummary{font-size:12px;margin-top:8px}
+</style></head><body>
+<h1>4D Receipt</h1>
+<div id="state" class="muted">Loading...</div>
+<div id="rows"></div>
+<div id="diffSummary"></div>
+<button class="primary" id="view">View changes</button>
+<button class="link" id="opts">Settings</button>
+<button class="danger" id="forget">Forget this site</button>
+<button class="danger" id="wipe">Wipe all data</button>
+<script src="popup.js"></script>
+</body></html>

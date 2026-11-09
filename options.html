@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+body{font-family:system-ui,sans-serif;max-width:560px;margin:30px auto;padding:0 16px;color:#111}
+label{display:block;font-size:13px;margin:14px 0 4px;font-weight:600}
+input[type=number],input[type=text]{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px}
+button{margin-top:18px;padding:10px 18px;border:0;border-radius:8px;font-weight:600;cursor:pointer}
+.primary{background:#111;color:#fff}.ghost{background:#fff;border:1px solid #111}
+.danger{background:#fff;border:1px solid #b3261e;color:#b3261e}
+#status{font-size:12.5px;color:#167d2f;margin-top:10px;min-height:16px}
+.note{font-size:12px;color:#666}
+</style></head><body>
+<h1>4D Receipt - Settings</h1>
+<label>Retention window (days)</label>
+<input type="number" id="retentionDays" min="1" max="3650">
+<label>Alert threshold (f_v score that triggers an alert)</label>
+<input type="number" id="alertThreshold" min="1" max="100" step="0.5">
+<label><input type="checkbox" id="anchorEnabled"> Anchor daily Merkle root to transparency endpoint</label>
+<label>Anchor endpoint URL</label>
+<input type="text" id="anchorEndpoint" placeholder="https://...">
+<p class="note">Only the Merkle root (a hash) is ever sent - never page content.</p>
+<button class="primary" id="save">Save settings</button>
+<button class="ghost" id="export">Export hash manifest (JSON)</button>
+<button class="danger" id="wipe">Wipe all data</button>
+<div id="status"></div>
+<script src="options.js"></script>
+</body></html>

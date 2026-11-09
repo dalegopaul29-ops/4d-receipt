@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+body{font-family:system-ui,sans-serif;margin:0;background:#f5f5f5;color:#111}
+header{padding:14px 20px;background:#111;color:#fff;font-size:13px}
+header .u{color:#9fd6a9;word-break:break-all}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#ddd;min-height:60vh}
+.col{padding:14px 18px;background:#fff;font-size:13.5px;line-height:1.5;vertical-align:top}
+h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#666;margin:4px 0 10px}
+.del{background:#fdecea;border-left:3px solid #b3261e;padding:6px 8px;margin:6px 0;white-space:pre-wrap}
+.add{background:#e9f7ee;border-left:3px solid #1e7d32;padding:6px 8px;margin:6px 0;white-space:pre-wrap}
+.chg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+.chg .from{background:#fdecea;padding:6px 8px;white-space:pre-wrap}
+.chg .to{background:#e9f7ee;padding:6px 8px;white-space:pre-wrap}
+.score{font-size:12px;background:#222;padding:4px 10px;border-radius:6px;display:inline-block;margin-top:6px}
+.badge{padding:2px 8px;border-radius:10px;font-weight:700;font-size:11px}
+.alert{background:#b3261e}.notice{background:#e19100}.none{background:#666}
+</style></head><body>
+<header>
+  <div id="meta">Loading...</div>
+  <div class="u" id="url"></div>
+  <div id="score"></div>
+</header>
+<div class="cols">
+  <div class="col"><h3>Removed</h3><div id="removed">—</div></div>
+  <div class="col"><h3>Added</h3><div id="added">—</div></div>
+</div>
+<script src="diffview.js"></script>
+</body></html>

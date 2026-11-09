@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>4D Receipt - Privacy Policy</title>
+<style>body{font-family:system-ui;max-width:640px;margin:40px auto;padding:0 20px;color:#111}
+h1{color:#16a34a}h2{margin-top:28px}</style></head><body>
+<h1>4D Receipt — Privacy Policy</h1>
+<p><b>Effective date:</b> November 2026 · 4D Suite</p>
+<h2>The short version</h2>
+<p>Everything 4D Receipt captures — page snapshots, diffs, visit counters — is stored
+<b>locally on your device</b>, encrypted with AES-256-GCM, and never transmitted anywhere.
+There is no server, no account, no analytics, no tracking. The only network request the
+extension can ever make is an optional, user-enabled anchor post that sends a <i>hash</i>
+(Merkle root) — never content.</p>
+<h2>What the extension reads, and what it never reads</h2>
+<ul>
+<li>It reads visible article text of pages you visit, for change detection.</li>
+<li>It <b>never</b> reads, stores, or transmits anything you type: form fields, inputs,
+passwords, and editable areas are structurally excluded from extraction.</li>
+<li>It never sells, shares, or syncs data. Wipe deletes the encryption key — recovery is
+impossible by design.</li>
+</ul>
+<h2>The broad permission, explained</h2>
+<p>4D Receipt requests access to all websites because a change-log tool cannot detect
+changes on pages it cannot read. The permission grants <i>read access to rendered text
+only</i>; the code enforces the exclusions above and the extension declares no remote
+code and no remote servers.</p>
+<h2>Open source</h2>
+<p>4D Receipt is MIT-licensed; its source is publicly available for audit.</p>
+</body></html>
